@@ -12,7 +12,7 @@
 
     //log response 
     $logFile = "M_PesaResponse.txt";
-    $jsonMpesaResponse - json_decode($mpesaResponse, true);
+    $jsonMpesaResponse = json_decode($mpesaResponse, true);
 
     //write to file 
     $log = fopen($logFile, "a");

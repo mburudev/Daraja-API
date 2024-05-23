@@ -9,10 +9,10 @@ $curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 
 
 $curl_post_data = array(
 //Fill in the request parameters with valid values
-'ShortCode' => '',
-'ResponseType' => '',
-'ConfirmationURL' => 'http://ip_address:port/confirmation',
-'ValidationURL' => 'http://ip_address:port/validation_url'
+'ShortCode' => '600990',
+'ResponseType' => 'Confirmed',
+'ConfirmationURL' => 'https://mburudev.github.io/Daraja-API/confirmation_url.php',
+'ValidationURL' => 'https://mburudev.github.io/Daraja-API/validation_url.php'
 );
 
 $data_string = json_encode($curl_post_data);
